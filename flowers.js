@@ -68,19 +68,15 @@ function createFlower() {
 
         flower.style.left = `${newX}px`;
         flower.style.top = `${newY}px`;
-
-        const otherFlowers = document.querySelectorAll('img');
-        otherFlowers.forEach((otherFlower) => {
-            if (otherFlower !== flower && isColliding(flower, otherFlower)) {
-                document.body.removeChild(flower);
-                return;
-            }
-        });
-
+        const maxX = window.innerWidth - flower.clientWidth;
+        const maxY = window.innerHeight - flower.clientHeight;
+    
         // Remove the flower if it goes off-screen
-        if (newX < 0 || newX > window.innerWidth || newY < 0 || newY > window.innerHeight) {
+        if (newX < 0 || newX > maxX) {
             document.body.removeChild(flower);
-            return;
+          }
+        if (newY < 0 || newY > maxY) {
+            document.body.removeChild(flower);
         }
 
         requestAnimationFrame(moveFlower);
@@ -91,4 +87,4 @@ function createFlower() {
 
 setInterval(() => {
     createFlower();
-}, 600);
+}, 400);
