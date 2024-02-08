@@ -7,14 +7,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;      
+    align-items: center;  
     overflow: hidden;
     background-color: lightpink;
 }
 
 .valentine-message {
+    margin-top: 20px;
     font-family: 'Parisienne', cursive;
     font-size: 6vw;
     text-align: center;
