@@ -9,24 +9,11 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    display: flex;  
+    display: flex;      
     overflow: hidden;
     background-color: lightpink;
 }
-.container {    
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
 
-h1 {
-    color: #333;
-}
-
-p {
-    color: #555;
-}
 .valentine-message {
     font-family: 'Parisienne', cursive;
     font-size: 6vw;
