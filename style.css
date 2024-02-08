@@ -33,11 +33,3 @@ p {
     text-align: center;
     color: #e0034d; /* Optional text color */
   }
-.image {
-    position: absolute;
-  }
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 100%;
-    }
-}
